@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>League of Leguends in Minecraft</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Alie">
+    <meta name="keywords" content="HTML">
+    <meta name="description" content="Description Placeholder">
+    <link rel="stylesheet" href="css/cssproyect.css">
+    <link rel="icon" href="images/icon.png">
+  </head>
+  <body class="overflow-hidden">
+    <!-- Gallery -->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+      }
+    </script>
+
+    <!-- Menu -->
+    <script>
+    function openNav(){
+      document.getElementById("Menu").style.width = "15%";
+    }
+    function closeNav(){
+      document.getElementById("Menu").style.width = "0px";
+    }
+    </script>
+    <nav id="Menu" class="Menu">
+      <span class="menubutton" style="font-size:30px;cursor:pointer" onclick="closeNav()">&nbsp;&equiv; Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &times;  </span>
+      <br/><br/>
+      <a class="Menuitem" href="index.html">News</a><br/>
+      <a class="Menuitem" href="about.html">About</a><br/>
+      <a class="Menuitem" href="faqs.html">FAQs</a><br/>
+      <a class="Menuitem" href="gallery.html">Gallery</a><br/>
+    </nav>
+
+    <!-- Head -->
+    <header id="conasidehead">
+      <span class="menubutton" style="font-size:30px;cursor:pointer;border: #2F2F2F solid 2px;" onclick="openNav()">&nbsp;&equiv; Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </header>
+
+
+    <!-- Content -->
+    <section class="content">
+      <div class="modal">
+        <div class="modal-content-noscroll">        
+          <div class="modal-content">
+            <h2 class="gallery-titless">GALLERY</h2>
+            <br>
+            <div class="mySlides" style="display: block;">
+              <img class="imagecontanier" src="images/gallery/comparison.png" alt="Image unavailable">
+              <div class="caption-container">
+                    <br/>
+                    <span style="border-bottom: solid 2px #cdb380; padding-left:0%;">
+                      13/03/2020 - Still in Development Phase
+                    </span>
+                    <br/><br/>
+                    Image comparison between in-game original League of Legends' battle arena and LOLIM's recreation in Minecraft. 
+              </div>
+            </div>
+            
+            <div class="mySlides">
+              <img class="imagecontanier" src="images/gallery/dummy.png" alt="Image unavailable">
+              <div class="caption-container">
+                  <br/>
+                  <span style="border-bottom: solid 2px #cdb380; padding-left:0%;">
+                    18/03/2020 - Still in Development Phase
+                  </span>
+                  <br/><br/>
+                  Placeholder dummy model with functional healthbar mechanics.
+              </div>
+            </div>
+          
+            <div class="mySlides">
+              <img class="imagecontanier" src="images/gallery/blockbench-red-turret.png" alt="Image unavailable">
+              <div class="caption-container">
+                  <br/>
+                  <span style="border-bottom: solid 2px #cdb380; padding-left:0%;">
+                    21/03/2020 - Still in Development Phase
+                  </span>
+                  <br/><br/>
+                  Early Red Team's turret model. No textures.
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img class="imagecontanier" src="images/gallery/inventory.png" alt="Image unavailable">
+              <div class="caption-container">
+                  <br/>
+                  <span style="border-bottom: solid 2px #cdb380; padding-left:0%;">
+                    25/03/2020 - Still in Development Phase
+                  </span>
+                  <br/><br/>
+                  LOLIM's in-game inventory. This screenshot depicts a Tristana's full build.
+              </div>
+            </div>
+          </div>
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)"><img src="images/arrow_left.png" alt="arrow_left"></a>
+          <a class="next" onclick="plusSlides(1)"><img src="images/arrow_right.png" alt="arrow_right"></a>  
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="conasidefoot">
+      <img id="logo" src="images/icon.png" alt="Logo"> 
+      <div id="share">
+        <a href="https://twitter.com/LOLIMProject"><img class="icon" src="images/twitter.png" alt="Twitter"></a>&nbsp;
+        <a href="https://www.reddit.com/r/LOLIMProject"><img class="icon" src="images/reddit.png" alt="Reddit"></a>&nbsp;
+        <a href="https://github.com/UndeadMaelys/lolim"><img class="icon" src="images/github.png" alt="GitHub"></a>&nbsp;
+      </div>
+      <div id="license">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Llicència de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
+      </div>
+    </footer>
+  </body>
+</html>

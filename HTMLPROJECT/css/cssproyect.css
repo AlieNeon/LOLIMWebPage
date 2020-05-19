@@ -1,0 +1,400 @@
+@font-face {
+  font-family: "MinecraftFont";
+  src: url('../fonts/Minecraft.ttf') format('truetype'  );
+}
+
+@font-face {
+  font-family: "LolFont";
+  src: url('../fonts/LOL.ttf') format('truetype'  );
+}
+
+*{
+  margin: 0px;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.side-color{
+    background-color: #cdb380;
+    color: #031634;
+    z-index: -1;
+}
+
+.twitter-timeline{
+    background-color: #031634;
+    color: #cdb380;
+}
+/*Menu*/
+.Menu{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #031634;
+  color: inherit;
+  overflow-x: hidden;
+  padding-top: 0px;
+  border: #2F2F2F solid 2px;
+}
+
+.Menu a{
+  margin-top: -19px;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #cdb380;
+  background-color: inherit;
+  display: block;
+}
+
+.Menu .closebtn{
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  font-size: 36px;
+  margin-left: 50px;
+  z-index: 1;
+}
+
+/*Menu items*/
+
+.Menuitem{
+  border: #2F2F2F solid 1px;
+}
+
+.Menuitem:hover{
+  background-image: linear-gradient(to bottom right, #036564, #033649);
+}
+
+.Menuitem:active{
+  background-image: linear-gradient(to top left, #036564, #033649);
+}
+
+/*Header*/
+
+header{
+  background-color: #031634;
+  color: #cdb380;
+  background-size: contain;
+  width: 100%;
+  position: fixed;
+  height: 35px;
+}
+
+.menubutton{
+  background-color: inherit;
+  color: #cdb380;
+}
+
+.icon{
+  height: 48px;
+  width: 48px;
+}
+
+/*Footer*/
+footer{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: static;
+  bottom: 0px;
+  width: 100%;
+  height: 64px;
+  background-color: #031634;
+  color: #cdb380;
+}
+
+.date{
+  position:absolute;
+  font-family: MinecraftFont, serif;
+  font-size: 120%;
+  width: 55%;
+  padding-left: 20%;
+  padding-top: 5px;
+  padding-right: 20% ;
+  text-align: center;
+}
+#logo{
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: 50px;
+}
+
+#share{
+  text-align: center;
+  right: 50%;
+}
+
+#license{
+  float: right;
+  padding-right: 30px
+}
+
+#license img{
+  height: 48px;
+  width: auto;
+}
+
+/*Sections*/
+
+section{
+  padding-top: 70px;
+  background-color: #033649;
+  color: #e8ddcb;
+  padding-bottom: 164px;
+}
+
+section a{
+  color: #cdb380;
+  background-color: inherit;
+}
+
+#conaside{
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+#conaside section{
+  position: absolute;
+  width: 80%;
+  overflow-y: scroll;
+  z-index: -100;
+  height: 100%;
+  padding-top: 50px;
+}
+
+#conaside aside{
+  position: absolute;
+  width: 20%;
+  right: 0px;
+  padding-top: 35px;
+  overflow-y: scroll;
+}
+
+#conasidefoot{
+  position: fixed;
+  bottom: 0px;
+  padding-bottom: 50px;
+}
+
+#conasidehead{
+  position: fixed;
+}
+
+.content{
+  padding-top: 1%;
+  padding-bottom: 0;
+}
+
+.indexart1{
+  color: inherit;
+  background-color: #033649;
+}
+
+.indexart2{
+  color: inherit;
+  background-color: #036564;
+}
+
+.indexartteam{
+  color: inherit;
+  background-color: #036564;
+}
+
+.titless{
+  font-family: MinecraftFont, serif;
+  letter-spacing: 2px;
+  width: 55%;
+  margin-left: 20% ;
+  margin-right: 20% ;
+  padding-top: 1%;
+  text-align: center;
+  border-bottom: solid 3px #cdb380;
+}
+
+.faqs-q{
+  font-family: LolFont, serif;
+  letter-spacing: 2px;
+  width: 55%;
+  margin-left: 25% ;
+  margin-right: 20% ;
+  padding-top: 1%;
+  text-align: left;
+}
+
+.faqs-a{
+  font-family: LolFont, serif;
+  font-size: 120%;
+  text-align: justify;
+  width: 45%;
+  padding-left: 30% ;
+  padding-right: 20% ;
+}
+
+.faqs-a a{
+  color: #cdb380;
+  background-color: inherit;
+}
+.indextextblock{
+  font-family: LolFont, serif;
+  font-size: 120%;
+  width: 55%;
+  padding-left: 20% ;
+  padding-right: 20% ;
+  text-align: justify;
+}
+
+.columntextblock{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-family: LolFont, serif;
+  font-size: 90%;
+  width: 22%;
+}
+
+.imagetextblock{
+  font-family: LolFont, serif;
+  font-size: 100%;
+  margin-left: 20% ;
+  padding-right: 28% ;
+}
+
+.imagetextblock a{
+  padding-top: 1%;
+  color: #cdb380;
+  background-color: inherit;
+}
+
+.imagetextblock li{
+  vertical-align: top;
+  text-align: left;
+  display: inline-block;
+  padding-right: 2% ;
+}
+
+.indextextblock a{
+  color: #cdb380;
+  background-color: inherit;
+}
+
+.sub{
+  border-top: solid 3px #cdb380;
+  text-align:center;
+}
+.center{
+  text-align:center;
+}
+.leftimg{
+  float: left;
+  width: 360px;
+  height: 360px;
+  padding-right: 1%;
+}
+
+.rightimg{
+  float: right;
+  width: 360px;
+  height: 360px;
+  padding-left: 1%;
+}
+
+.teamimg{
+  width: 220px;
+  height: 220px;
+  float: none;
+}
+
+/*Gallery*/
+
+.modal {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  padding-top: 70px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #031634;
+  color: inherit;
+  overflow-y: hidden;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.modal-content-noscroll {
+  position: relative;
+  margin: auto;
+  width: 95%;
+  height: 650px;
+  text-align:center;
+}
+
+.modal-content {
+  background-color: #033649;
+  color: inherit;
+  padding: 1%;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.gallery-titless{
+  font-family: MinecraftFont, serif;
+  letter-spacing: 2px;
+  width:50%;
+  margin-left: 25%;
+  text-align: center;
+  border-bottom: solid 3px #cdb380;
+}
+
+.mySlides{
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: inherit;
+  background-color: rgba(0,0,0,0.5);
+  transition: 0.6s ease;
+  user-select: none;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  color: inherit;
+  background-color: #111111;
+}
+
+.caption-container {
+  width: 80%;
+  text-align: center;
+  background-color: #033649;
+  color: #e8ddcb;
+  padding-left: 10%;
+}
+
+.imagecontanier{
+  height:550px;
+}
